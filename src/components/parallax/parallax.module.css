@@ -1,0 +1,103 @@
+.parallax_container {
+  background-image: url('../../assets/parallaxImage.jpg');
+  min-height: 400px;
+  opacity: 0.6;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  margin: auto;
+}
+
+.parallax_container::before {
+  content: "";
+  width: 100%;
+  min-height: 400px;
+  background-color: rgba(0, 0, 0, 0.495);
+}
+
+.inside_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 99%;
+  height: 390px;
+  border: solid 5px #fff;
+  margin: auto;
+  position: absolute;
+}
+
+.parallax_container p {
+  color: white;
+  font-size: 1em;
+  opacity: 1 !important;
+  text-transform: uppercase;
+}
+
+.parallax_container h2 {
+  color: white;
+  opacity: 1 !important;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 2rem;
+}
+
+@media (max-width: 1080px) {
+  .parallax_container {
+    background-image: url('../../assets/parallaxImage.jpg');
+    min-height: 400px;
+    opacity: 0.6;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+  }
+
+  .parallax_container::before {
+    content: "";
+    width: 100%;
+    min-height: 400px;
+    background-color: rgba(0, 0, 0, 0.495);
+  }
+
+  .inside_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 99%;
+    height: 390px;
+    border: solid 5px #fff;
+    margin: auto;
+    position: absolute;
+  }
+
+  .parallax_container p {
+    color: white;
+    font-size: 1em;
+    opacity: 1 !important;
+    text-transform: uppercase;
+  }
+
+  .parallax_container h2 {
+    color: white;
+    opacity: 1 !important;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 2rem;
+  }
+}
